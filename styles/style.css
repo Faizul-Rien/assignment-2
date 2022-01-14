@@ -141,4 +141,93 @@ nav > ul > li{
    Second Section
    -----------------------*/
 
-   
+.item-categories{
+    display: grid;
+    width: 950px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.section-title-2{
+    font-size: 24px;
+    width: 280px;
+    height: 60px;
+    margin-left: 460px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.category{
+    width: 270px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px  grey;
+
+}
+.category img{
+    width: 250px;
+    height: 210px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.category-title{
+    font-size: 20px;
+    padding-left: 10px;
+}
+.price{
+    height: 30px;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.fa-star , .fa-star-half-alt{
+    color: gold;
+    font-size: 8px
+}
+
+.ratings{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 220px;
+    height: 30px;
+}
+.point{
+    font-size: 10px;
+    margin-top: 15px;
+}
+
+.category-info{
+    width: 220px;
+    font-size: 12px;
+    text-align: justify;
+    padding-left: 10px;
+}
+.see-more{
+    width: 100px;
+    font-size: 12px;
+    color: tomato;
+    margin-left: 950px;
+    margin-bottom: 100px;
+}
+
+/* ----------------------
+    Section section --end--
+    ------------------------ */
+
+/* ------------------------
+    Third section
+    --------------------- */
+.third-section{
+    display: flex;
+    width: 900px;
+    border: 1px solid black;
+    margin-left: 120px;
+}
+
+.amazon-alexa img{
+    border: 1px solid black;
+    width: 400px;
+    height: 270px;
+}
