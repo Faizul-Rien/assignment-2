@@ -98,7 +98,7 @@ nav > ul > li{
     height: 30px;
     font-size: 12px;
     border-style: none;
-    border-radius: 15px;
+    border-radius: 10px;
     padding-bottom: 4px;
 }
 .fas,  .fa-arrow-right{
@@ -222,12 +222,26 @@ nav > ul > li{
 .third-section{
     display: flex;
     width: 900px;
-    border: 1px solid black;
-    margin-left: 120px;
+    margin-left: 130px;
+    margin-bottom: 100px;
 }
 
 .amazon-alexa img{
-    border: 1px solid black;
+    width: 350px;
+    height: 240px;
+    padding: 10px;
+    margin-right: 40px;
+}
+
+.third-section-title{
+    width: 450px;
+}
+.info{
     width: 400px;
-    height: 270px;
+    font-size: 12px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+span{
+    color: blueviolet;
 }
