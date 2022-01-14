@@ -201,7 +201,6 @@ nav > ul > li{
 .category-info{
     width: 220px;
     font-size: 12px;
-    text-align: justify;
     padding-left: 10px;
 }
 .see-more{
@@ -245,3 +244,53 @@ nav > ul > li{
 span{
     color: blueviolet;
 }
+
+/* -----------------------
+   Third Section --end--
+   ------------------------ */
+
+/* -------------------------
+   Footer Section
+   ---------------------- */
+   .footer-section{
+       color: white;
+       background-color: black;
+       width: 100%;
+       height: 200px;
+       border: 1px solid black;
+   }
+   .footer-title{
+       margin-top: 50px;
+       margin-left: 500px;
+       width: 300px;
+       border: 1px solid black;
+       font-size: 20px;
+   }
+   .footer-icon{
+       margin-left: 530px;
+       width: 200px;
+       border: 1px solid black;
+   }
+   .copy{
+       margin-left: 500px;
+       font-size: 10px;
+       width: 200px;
+       border: 1px solid black;
+   }
+   .right{
+    margin-left: 550px;
+    font-size: 10px;
+    width: 200px;
+    border: 1px solid black;
+   }
+
+   .fa-twitter-square, .fa-facebook-square, .fa-instagram-square, .fa-youtube{
+       font-size: 20px;
+       margin-right: 20px;
+   }
+
+   /* -----------------------
+     Footer Section --end--
+     ------------------------ */
+
+     
