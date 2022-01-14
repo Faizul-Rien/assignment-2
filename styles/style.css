@@ -110,4 +110,35 @@ nav > ul > li{
 /* -----------------------
    First section --end-- 
    -------------------------*/
+
+/* ---------------------
+   Logo Section
+   ------------------ */
+
+  .logo-section{
+      display: flex;
+      width: 900px;
+      height: 90px;
+      margin-top: 100px;
+      margin-left: 130px;
+      padding-left: 30px;
+      align-items: center; 
+      border:1px solid rgb(177, 172, 172);
+      border-right:white;
+      border-left: white;
+      margin-bottom: 100px;
+  } 
+  .logo{
+      width: 120px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+/* ----------------------
+    Logo Section --end--
+    ---------------------- */
+
+/* -------------------------
+   Second Section
+   -----------------------*/
+
    
