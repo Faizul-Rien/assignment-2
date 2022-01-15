@@ -25,21 +25,27 @@ body{
 nav{
     width: 450px;
     height: 50px;
-    margin-top: 35px;
+    margin-top: 25px;
     margin-right: 120px;
 }
-nav > ul{
+.nav-items{
     display: flex;
     list-style: none;
     margin-bottom: 10px;
     
 }
 nav > ul > li{
+   
+    border-radius: 5px;
     text-decoration: none;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    padding-left: 5px;
     margin-right: 20px;
     width: 60px;
     font-size: 12px;
+}
+li:hover{
+    background-color: skyblue;
 }
    /* ---------------------------
         Header font awesome
@@ -120,7 +126,7 @@ nav > ul > li{
       width: 900px;
       height: 90px;
       margin-top: 100px;
-      margin-left: 130px;
+      margin-left: 150px;
       padding-left: 30px;
       align-items: center; 
       border:1px solid rgb(177, 172, 172);
@@ -150,6 +156,7 @@ nav > ul > li{
 }
 
 .section-title-2{
+    
     font-size: 24px;
     width: 280px;
     height: 60px;
@@ -159,7 +166,7 @@ nav > ul > li{
 }
 .category{
     width: 270px;
-    height: 500px;
+    height: 430px;
     margin: 20px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px  grey;
@@ -171,15 +178,19 @@ nav > ul > li{
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-bottom: -20px;
 }
 .category-title{
+    color: slateblue;
     font-size: 20px;
     padding-left: 10px;
+    margin-bottom: -10px;
 }
 .price{
     height: 30px;
     font-size: 18px;
     padding-left: 10px;
+    margin-bottom: -5px;
 }
 .fa-star , .fa-star-half-alt{
     color: gold;
@@ -193,6 +204,7 @@ nav > ul > li{
     justify-content: flex-start;
     width: 220px;
     height: 30px;
+    margin-bottom: -10px;
 }
 .point{
     font-size: 10px;
@@ -232,6 +244,7 @@ nav > ul > li{
     height: 240px;
     padding: 10px;
     margin-right: 40px;
+    border-radius: 20px;
 }
 
 .third-section-title{
@@ -254,45 +267,123 @@ span{
 /* -------------------------
    Footer Section
    ---------------------- */
-   .footer-section{
-       color: white;
-       background-color: black;
-       width: 100%;
-       height: 200px;
-       border: 1px solid black;
-   }
-   .footer-title{
-       margin-top: 50px;
-       margin-left: 500px;
-       width: 300px;
-       border: 1px solid black;
+   
+   footer h1{
        font-size: 20px;
-   }
-   .footer-icon{
-       margin-left: 530px;
-       width: 200px;
-       border: 1px solid black;
-   }
-   .copy{
-       margin-left: 500px;
-       font-size: 10px;
-       width: 200px;
-       border: 1px solid black;
-   }
-   .right{
-    margin-left: 550px;
-    font-size: 10px;
-    width: 200px;
-    border: 1px solid black;
-   }
+    text-align: center;
+}
+    footer p{
+    text-align: center;
+    font-size: 8px;
+}
+    footer{
+    padding: 15px;
+    color: white;
+    background-color: black;
+    margin-top: 30px;
+    
+}
+    .footer-icon{
+        text-align: center;
+    }
+  
 
    .fa-twitter-square, .fa-facebook-square, .fa-instagram-square, .fa-youtube{
        font-size: 20px;
        margin-right: 20px;
+       margin-bottom: 20px;
    }
 
+   #nav-toggler{
+       display: none;
+   }
+   .nav-toggler-icon{
+       display: none;
+       font-size: 20px;
+   }
    /* -----------------------
      Footer Section --end--
      ------------------------ */
 
+    /*-----------------------
+     Media Query 
+     -----------------------*/
+     @media (max-width:688px){
+        .logo-section{
+            border: none;
+            width: 200px;
+           flex-direction: column;
+        }
+       .first-container{
+           display: grid;
+           grid-template-columns: 1fr;
+       }
+       .item-categories{
+           display: grid;
+           grid-template-columns: 1fr;
+       }
+        .nav-items{
+          flex-direction: column;
+          transform: translateY(-400px);
+       }
+       /* .header-line{
+           display: grid;
+           grid-template-columns: 1fr;
+       } */
+       .nav-toggler-icon{
+           display: block;
+           margin-left: 130px;
+           margin-top: 20px;
+    
+       }
+       #nav-toggler:checked ~ .nav-items{
+        transform: translateY(0);
+       }
+
+       .section-title-1{
+           width: 100%;
+       }
+       .section-title-2{
+           width: 100px;
+           margin-bottom: 100px;
+           margin-top: 500px;
+           margin-left:200px;
+       }
+       .third-section{
+           display: grid;
+           grid-template-columns: 1fr;
+       }
+       .see-more{
+           margin-left: 300px;
+       }
+       footer{
+           width: 300px;
+           margin-left: 120px;
+       }
+       .first-section{
+           width: 200px;
+       }
+       .section-1-pg{
+           width: 200px;
+           margin-bottom: 150px;
+       }
+       .camera img{
+           margin-top: 200px;
+           width: 300px;
+           height: 300px;
+           margin-left: 100px;
+       }
+      .amazon-alexa img{
+          width: 250px;
+          height: 200px;
+      }
+      .third-section-title{
+          width: 200px;
+      }
+      .info{
+          width: 200px;
+
+      }
+     } 
+         
     
