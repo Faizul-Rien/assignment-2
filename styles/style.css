@@ -28,6 +28,13 @@ nav{
     margin-top: 25px;
     margin-right: 120px;
 }
+#nav-toggler{
+    display: none;
+}
+.nav-toggler-icon{
+    display: none;
+    font-size: 20px;
+}
 .nav-items{
     display: flex;
     list-style: none;
@@ -226,7 +233,7 @@ li:hover{
 }
 
 /* ----------------------
-    Section section --end--
+    Second section --end--
     ------------------------ */
 
 /* ------------------------
@@ -294,55 +301,59 @@ span{
        margin-bottom: 20px;
    }
 
-   #nav-toggler{
-       display: none;
-   }
-   .nav-toggler-icon{
-       display: none;
-       font-size: 20px;
-   }
+   
    /* -----------------------
      Footer Section --end--
      ------------------------ */
 
     /*-----------------------
-     Media Query 
+     Media Query for mobile
      -----------------------*/
      @media (max-width:688px){
-        .logo-section{
-            border: none;
-            width: 200px;
-           flex-direction: column;
-        }
+       
        .first-container{
            display: grid;
            grid-template-columns: 1fr;
        }
+       .nav-items{
+        flex-direction: column;
+        transform: translateY(-400px);
+     }
+     .nav-toggler-icon{
+         display: block;
+         margin-left: 130px;
+         margin-top: 20px;
+  
+     }
+     #nav-toggler:checked ~ .nav-items{
+      transform: translateY(0);
+     }
+     .first-section{
+        width: 200px;
+    }
+       .section-title-1{
+        width: 100%;
+       }
+       .section-1-pg{
+        width: 200px;
+        margin-bottom: 150px;
+    }
+    .camera img{
+        margin-top: 200px;
+        width: 300px;
+        height: 300px;
+        margin-left: 100px;
+    }
+       .logo-section{
+        border: none;
+        width: 200px;
+       flex-direction: column;
+    }
        .item-categories{
            display: grid;
            grid-template-columns: 1fr;
        }
-        .nav-items{
-          flex-direction: column;
-          transform: translateY(-400px);
-       }
-       /* .header-line{
-           display: grid;
-           grid-template-columns: 1fr;
-       } */
-       .nav-toggler-icon{
-           display: block;
-           margin-left: 130px;
-           margin-top: 20px;
-    
-       }
-       #nav-toggler:checked ~ .nav-items{
-        transform: translateY(0);
-       }
-
-       .section-title-1{
-           width: 100%;
-       }
+       
        .section-title-2{
            width: 100px;
            margin-bottom: 100px;
@@ -356,34 +367,86 @@ span{
        .see-more{
            margin-left: 300px;
        }
-       footer{
-           width: 300px;
-           margin-left: 120px;
-       }
-       .first-section{
-           width: 200px;
-       }
-       .section-1-pg{
-           width: 200px;
-           margin-bottom: 150px;
-       }
-       .camera img{
-           margin-top: 200px;
-           width: 300px;
-           height: 300px;
-           margin-left: 100px;
-       }
-      .amazon-alexa img{
-          width: 250px;
-          height: 200px;
-      }
-      .third-section-title{
-          width: 200px;
-      }
-      .info{
-          width: 200px;
+       .amazon-alexa img{
+        width: 250px;
+        height: 200px;
+    }
+    .third-section-title{
+        width: 200px;
+    }
+    .info{
+        width: 200px;
+       
 
-      }
+    }
+       footer{
+           width: 500px;
+       }
+       
+      
+      
+      
      } 
+     /*-----------------------
+     Media Query for tablet
+     -----------------------*/
+     @media (min-width:689px) and (max-width:992px) {
+
+        .first-container{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .nav-items{
+            flex-direction: column;
+            transform: translateY(-400px);
+         }
+         .nav-toggler-icon{
+             display: block;
+             margin-left: 130px;
+             margin-top: 20px;
+      
+         }
+         #nav-toggler:checked ~ .nav-items{
+          transform: translateY(0);
+         }
+         .section-1-pg{
+            width: 300px;
+            margin-bottom: 70px;
+        }
+        .logo-section{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            border: none;
+            width: 200px;
+        }
+        .section-title-2{
+            font-size: 26px;
+            width: 100px;
+            margin-bottom: 100px;
+            margin-top: 200px;
+            margin-left: 120px;
+        }
+        .item-categories{
+            width: 300px;
+            display: grid;
+            margin-left: 80px;
+            grid-template-columns:repeat(2, 1fr);
+        }
+        .third-section{
+            display: grid;
+            grid-template-columns: 1fr;
+       
+        }
+        .see-more{
+            margin-left: 300px;
+        }
+        footer{
+            width: 700px;
+            margin-left: 0px;
+        }
+     }
+
+     /* ------------------------
+      Media query --end--
+    -----------------------------*/
          
-    
